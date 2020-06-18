@@ -1,0 +1,707 @@
+
+<title>Hassouna Academy Home Page - اكاديمية حسونة</title>
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <meta name="description" content="Hassouna Academy">
+        <meta name="description" content="اهلاً بكم في أكاديمية حسونة">
+        <meta name="description" content="JAVA">
+        <meta name="description" content="جافا">
+        <meta name="description" content="C#">
+        <meta name="description" content="C SHARP">
+        <meta name="description" content="سي شارب">
+        <meta name="description" content="VB">
+        <meta name="description" content="VISUAL BASIC">
+        <meta name="description" content="فيجوال بيسك">
+        <meta name="description" content="اكاديمية حسونة">
+        <meta name="description" content="HASSOUNA ACADEMY">
+        <meta name="description" content="اهلاً بكم في أكاديمية حسونة">
+        <meta name="description" content="Hassouna Academy">
+        
+        
+        <link rel="stylesheet" href="https://www.hassouna-academy.com/bootstrap-3.3.7-dist/css/bootstrap.edit.css" />
+        
+        <script src="https://www.hassouna-academy.com/jquery-3.2.1.js"></script>
+        <script src="https://www.hassouna-academy.com/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        
+        <link rel="icon" href="https://www.hassouna-academy.com/images/logo.png" />
+        
+        <link rel="stylesheet" href="https://www.hassouna-academy.com/bootstrap-3.3.7-dist/css/styles.css" />
+        <link rel="stylesheet" href="https://www.hassouna-academy.com/bootstrap-3.3.7-dist/css/styles2.css" />
+        
+        <link rel="stylesheet" href="app_style/myscroll.css" />
+        
+        
+        
+                        
+        <style>
+
+            .video-label{ direction: rtl; }
+            
+            .navbar .navbar-collapse {
+                text-align:
+                right;
+            }
+
+        </style>
+        
+        <link rel="stylesheet" href="app_style/othercss.css" />
+
+    </head>
+    
+
+
+
+
+
+        
+<body>
+
+    <div id='loading_wrap' dir="rtl" style='position:fixed; height:100%; width:100%; overflow:hidden; top:0; left:0;background-color:#413d80;z-index:1500;color:#fff;text-align:center;justify-content: center;align-items: center;display: flex; display:none;'>
+        <span id="myload">
+            <span id="myico" class="glyphicon glyphicon-cog"></span>
+            انتظر قليلاً حتي يتم تحميل الصفحة... أو اضغط علي             <button id="btnhide" style="font-size:25px;" onclick="hideNow();" class="btn btn-default">اخفاء الآن</button>
+            <br><br>
+
+             <div class="progress" width="20" style="height:27px;">
+                  <div class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                      <h4 class="modal-title" id="myModalLabel"><p style="width: 0%;" id="demo"></p></h4>
+                  </div>
+             </div>
+            
+        </span>
+    </div>
+    
+
+      
+            
+<h1 id="test"></h1>
+    <nav class="navbar navbar-default navbar-fixed-top" style="background:linear-gradient(rgba(29,24,95,0.8),rgba(73, 65, 173, 0.8),rgba(29,24,95,0.8));height:55px;box-shadow:inset 0 0 20px rgba(29,24,95,0.8);">
+      <div class="container-fluid ">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div  class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!---->
+            <a id="mybrand" style="height:55px;font-weight:bold;color:#066292;border-right:1px solid #aaa;border-left:1px solid #aaa;margin-right:5px;margin-left:5px;padding-bottom:5px;text-shadow:1px 1px 1px #5dd7ed, -1px -1px 1px #5dd7ed;" onmouseover="this.style.color='#138bc9'" onmouseout="this.style.color='#066292'"  " class="navbar-brand" href="https://www.youtube.com/user/HassounaAcademy" target="_blank">Hassouna-Academy</a>        </div>
+          
+
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+          <ul class="nav navbar-nav">
+          <li><a style="font-family: arial;" href="?change_lang=yes">English  <span class="glyphicon glyphicon-globe"></span> </a></li>        
+                        
+            <!-- Links -->
+            <li class="dropdown"><a href="all" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">الكورسات <span class="glyphicon glyphicon-education"></span> <span class="caret"></span></a><ul class="dropdown-menu"><li><a href="all">كورسات مجانية  <span class="glyphicon glyphicon-thumbs-up"></span> </a></li><li><a href="recordcourse">التسجيل في كورس مدفوع  <span class="glyphicon glyphicon-registration-mark"></span> </a></li><li><a href="plcourses">كورسات لغات البرمجة  <span class="glyphicon glyphicon-education"></span> </a></li><li><a href="mobilecourses">كورسات تطبيقات الموبايل  <span class="glyphicon glyphicon-phone"></span> </a></li><li><a href="webcourses">كورسات الويب  <span class="glyphicon glyphicon-globe"></span> </a></li><li><a href="dbanalysiscourses">كورسات قواعد البيانات و التحليل  <span class="glyphicon glyphicon-tasks"></span> </a></li><li><a href="comoscourses">كورسات كمبيوتر و انظمة  <span class="glyphicon glyphicon-blackboard"></span> </a></li><li><a href="educourses">كورسات مناهج دراسية  <span class="glyphicon glyphicon-education"></span> </a></li><li><a href="programsstory">البرامج و القصص  <span class="glyphicon glyphicon-camera"></span> </a></li><li><a href="appsbooks">تطبيقات و كتب  <span class="glyphicon glyphicon-list-alt"></span> </a></li><li><a href="comments">تعليقات  <span class="glyphicon glyphicon-comment"></span> </a></li></ul></li><li class="dropdown"><a href="index" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">انضم الينا <span class="glyphicon glyphicon-link"></span> <span class="caret"></span></a><ul class="dropdown-menu"><li><a href="login">تسجيل الدخول  <span class="glyphicon glyphicon-log-in"></span> </a></li><li><a href="register">انشاء حساب  <span class="glyphicon glyphicon-plus-sign"></span> </a></li><li><a href="ahmedwords">كلمة احمد حسونة  <span class="glyphicon glyphicon-bullhorn"></span> </a></li><li><a href="thanks">كلمة شكر  <span class="glyphicon glyphicon-heart"></span> </a></li><li><a href="links">روابط الاكاديمية  <span class="glyphicon glyphicon-link"></span> </a></li><li><a href="editprofile">تعديل الملف الشخصي  <span class="glyphicon glyphicon-edit"></span> </a></li><li><a href="about">من نحن  <span class="glyphicon glyphicon-info-sign"></span> </a></li><li><a href="contactus">اتصل بنا  <span class="glyphicon glyphicon-phone-alt"></span> </a></li><li><a href="sendcommentstosite">ابلغ عن خطأ في الموقع  <span class="glyphicon glyphicon-send"></span> </a></li></ul></li><li><a href="index">الرئيسية  <span class="glyphicon glyphicon-home"></span> </a></li>
+                        
+                          
+            <!---->
+          </ul>
+         
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="myfooter" style="background:linear-gradient(rgba(29,24,95,0.8),rgba(73, 65, 173, 0.8),rgba(29,24,95,0.8));box-shadow:inset 0 0 20px rgba(29,24,95,0.8);">
+        Hassouna-Academy &copy; 2020        &nbsp;&nbsp;
+        <a href="https://www.youtube.com/user/HassounaAcademy" target="_blank"><img src="https://www.hassouna-academy.com/images/youtube.png" /></a>
+        &nbsp;&nbsp;
+        <a href="https://www.facebook.com/Hassouna.Academy/" target="_blank"><img src="https://www.hassouna-academy.com/images/f_b.png" /></a>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            var keynow = '';
+            
+            $('input , textarea').keydown(function(e){
+                
+                if(e.which==13){ 
+                    if( $(this).prop("tagName")=="INPUT" ) e.preventDefault();
+                };
+                
+                // # $ F5 ; ' " / \ | = + * { } ? [ ] 
+                if( e.key=='#' || e.key=='$' || e.which==116 || e.key==';' || e.which==187 || e.which==106 || e.which==107 || e.which==111 || e.which==220 || e.key=="'" || e.key=='"' || (e.shiftKey && e.which==191) || (e.shiftKey && e.which==219) || (e.shiftKey && e.which==221)  || e.key=='<' || e.key=='>' || (e.key=='[') || (e.key==']') || e.key=='\(' || e.key=='\)' ) {
+                    e.preventDefault();
+                    $('#temperr').remove();
+                    $(this).after('<div dir="rtl" id="temperr" style="font-weight:bold;font-size:16px;background-color:#fff;color:red;width100%;border-radius:7px;">رجاء لا تستخدم ' + e.key + '</div>');
+                }
+                else{ $('#temperr').remove(); }
+                
+                //$(this).val( e.which ) //Show Key
+            });
+            
+            
+            $('input , textarea').bind("paste", function(e){
+                e.preventDefault();
+                var pastedData = e.originalEvent.clipboardData.getData('text');
+                pastedData = pastedData.replace(/;/g,'').replace(/'/g,'').replace(/"/g,'').replace(/\//g,'').replace(/\\/g,'').replace(/\|/g,'').replace(/\=/g,'').replace(/\+/g,'').replace(/\*/g,'').replace(/\{/g,'').replace(/\}/g,'').replace(/\?/g,'').replace(/\؟/g,'').replace(/\[/g,'').replace(/\]/g,'').replace(/\$/g,'').replace(/\#/g,'');
+                $(this).val(pastedData);
+            });
+            
+        });
+    </script>
+    
+    <script src="app_style/load.js"></script>
+    
+    <script>
+        
+    </script>
+    </body>
+</html> 
+<meta name="description" content="Hassouna Academy">
+<meta name="description" content="اهلاً بكم في أكاديمية حسونة">
+<meta name="description" content="Hassouna Academy">
+
+
+<style>
+    
+@media (max-width: 833px) {
+    #academybutton , #bellbutton{
+        display:none;
+    }
+
+}
+    
+</style>
+
+<!--  Starting Welcome  -->
+<div >
+    <h2 id="welcome_h_a" dir="rtl" style="margin-top:0;margin-right:5px;text-align:right;color:#311aaf;font-weight:bold;">
+        <span style="margin-right:7px;">
+        اهلاً بكم في أكاديمية حسونة        </span>
+        <span class="glyphicon glyphicon-education"></span>
+        <img id="ahmed" src="https://www.hassouna-academy.com/images/ahmed.png" style="margin-left:5px;margin-top:-7;float:left;margin-right:10px;clear:both;width:150px;height:150px;border:2px solid #067292;border-radius:75px;" />
+        
+        <div class="my-p">
+        <p  style="font-weight:normal;">
+            اكاديمية حسونة تقدم لكم الدروس المجانية في عالم التكنولوجيا لتتابعوها من اي مكان و في اي وقت. ونسعد دائماً بتواجدكم معنا و انضمامكم الينا. نحن نحرص دائماً علي انك تتعلم ثم تفهم ثم بعد ذلك تقوم بالابداع. و هذا هو شعارنا             <span style="color:#2f0b90;">"افهم = تُبدع" .</span>
+            
+            <a id="regNow" class="btn " href="https://www.hassouna-academy.com/register">سجل الآن في الاكاديمية<span class="glyphicon glyphicon-user"></span></a>
+            <span id="forReg">لتكون معنا دائماً</span>
+            
+            <br>
+            
+            
+            
+            
+            
+
+        </p>
+        
+       
+        
+        <!-- START Subscribe HA -->
+        <div style="width:32%;margin:auto;margin-bottom:3px;display:inline-block">
+        <a target="_blank" class="btn btn-info" href="https://www.hassouna-academy.com/register" dir="rtl" style="width:100%;height:38px;">
+             سجل حساب             <span id="academybutton">
+                 بالأكاديمية             </span>
+            <span class="glyphicon glyphicon-user"></span>
+        </a>
+        </div>
+        <!-- END   Subscribe HA -->
+            
+            
+        <!-- START Subscribe Youtube -->
+        <div style="width:32%;margin:auto;margin-bottom:3px;display:inline-block">
+        <a target="_blank" class="btn btn-info" href="https://www.youtube.com/user/HassounaAcademy" dir="rtl" style="width:100%;height:38px;">
+             اشترك بالقناة <span class="glyphicon glyphicon-user"></span>            <span id="bellbutton">
+                 +  الجرس                 
+                <span class="glyphicon glyphicon-bell"></span>
+            </span>
+        </a>
+        </div>
+        <!-- END   Subscribe Youtube -->
+            
+            
+        <!-- START How to learn -->
+        <div style="width:32%;margin:auto;margin-bottom:3px;display:inline-block">
+        <a target="_blank" class="btn btn-info" href="https://www.hassouna-academy.com/howtolearn" dir="rtl" style="width:100%;height:38px;">
+             كيف أتعلم!؟ <span class="glyphicon glyphicon-road"></span>            
+        </a>
+        </div>
+        <!-- END   How to learn -->
+        
+        
+         
+        <!-- START Answer Me -->
+        <div style="width:100%;margin:auto;margin-bottom:3px;display:inline-block">
+        <a target="_blank" class="btn btn-warning" href="https://www.hassouna-academy.com/answerme" dir="rtl" style="width:100%;height:38px;">
+             برنامج جاوبني تكنولوجي <span class="glyphicon glyphicon-th-list"></span>            
+        </a>
+        </div>
+        <!-- END   Answer Me -->
+        
+        
+        </div>
+        
+        
+    </h2>
+
+    
+
+    
+    
+</div>
+
+<!--  End Welcome  -->
+
+
+
+<!-- START Facebook Like And Share - HTML -->
+<div style="padding:5px;" dir="rtl">
+    <div style="display:inline-block;vertical-align:top;" data-width="235" class="fb-like" data-href="https://www.facebook.com/Hassouna.Academy/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+    
+    <!-- START Ahmed Facebook -->
+    <div style="padding:5px;display:inline-block;" dir="rtl">
+        <a target="_blank" href="https://www.facebook.com/ahmedhassounafirst">
+            لمتابعة المنشورات ادخل علي حساب احمد حسونة واضغط علي متابعة ثم اختار شاهد اولاً See First            &nbsp;&nbsp;<img style="width:50px;height:50px;border:1px solid navy;border-radius:25px;" src="https://www.hassouna-academy.com/images/ahmed.png" />
+        </a>
+    </div>
+    <!-- END Ahmed Facebook -->
+    
+</div>
+<!-- END Facebook Like And Share - HTML -->
+
+
+<div class="new-line"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- START News -->
+
+
+<div id="carousel-news" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+      <li data-target="#carousel-news" data-slide-to="0"  class="active" ></li><li data-target="#carousel-news" data-slide-to="1"  ></li><li data-target="#carousel-news" data-slide-to="2"  ></li><li data-target="#carousel-news" data-slide-to="3"  ></li><li data-target="#carousel-news" data-slide-to="4"  ></li><li data-target="#carousel-news" data-slide-to="5"  ></li><li data-target="#carousel-news" data-slide-to="6"  ></li>  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+      
+    <div style="height:100px; background-color:#395faa; padding:7px; margin:10px; border:5px solid #ffffff; border-radius:7px; color:#fff; text-align:center; width:98%; font-size:20px;" dir="rtl" style="" class="item active my-news">تم نشر كتاب صخرة الأساس في احتراف CSS تأليف احمد حسونة</div><div style="height:100px; background-color:#395faa; padding:7px; margin:10px; border:5px solid #ffffff; border-radius:7px; color:#fff; text-align:center; width:98%; font-size:20px;" dir="rtl" style="" class="item my-news">تم نشر كتاب صخرة الأساس في احتراف HTML تأليف احمد حسونة</div><div style="height:100px; background-color:#395faa; padding:7px; margin:10px; border:5px solid #ffffff; border-radius:7px; color:#fff; text-align:center; width:98%; font-size:20px;" dir="rtl" style="" class="item my-news">اشتري كورس الويب المدفوع - ارسل كلمة كورس الويب علي الواتساب (مصر) 01119630932</div><div style="height:100px; background-color:#395faa; padding:7px; margin:10px; border:5px solid #ffffff; border-radius:7px; color:#fff; text-align:center; width:98%; font-size:20px;" dir="rtl" style="" class="item my-news">لغة Kotlin التي اعتمدتها جوجل في شهر 9 عام 2017 توفر الكثير من الوقت علي المطور عند انشاء تطبيقات اندرويد ، تم شرح لغة Kotlin بالتفصيل في اكاديمية حسونة</div><div style="height:100px; background-color:#395faa; padding:7px; margin:10px; border:5px solid #ffffff; border-radius:7px; color:#fff; text-align:center; width:98%; font-size:20px;" dir="rtl" style="" class="item my-news">معلومة: ال Robot يصنع أحدث السيارات العالمية و أحدث أعمال الخراطة المعقدة و ال CPU والالكترونيات</div><div style="height:100px; background-color:#395faa; padding:7px; margin:10px; border:5px solid #ffffff; border-radius:7px; color:#fff; text-align:center; width:98%; font-size:20px;" dir="rtl" style="" class="item my-news">معلومة: كلمة روبوت تأتى من الكلمة التشيكية روبوتا  ومعناها ،العمل الالزامى، و يقال أن الروبوت يرجع إلى القرن الأول الميلادى عندما صنع هيرون الإسكندري تمثالا يتحرك وينحني بواسطة الهواء الساخن</div><div style="height:100px; background-color:#395faa; padding:7px; margin:10px; border:5px solid #ffffff; border-radius:7px; color:#fff; text-align:center; width:98%; font-size:20px;" dir="rtl" style="" class="item my-news">تم اطلاق لغة برمجة جديدة تسمي رينج ولها كورس موجود علي حسونة اكاديمي</div>   
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-news" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-news" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+<!-- END News -->
+
+
+
+
+ <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=TLmgaBEkbSU&list=PLHIfW1KZRIflppXbTqLj4qwu1BH6F31zo&index=2&t=0s" target="_blank">
+        <p class="my-p v-effect" style="font-weight:normal;" dir="rtl" >
+            برمجة بدون لغة ولا كود All in one و شغل دماغك 🧠 وخذ خبرات سنين            <br>
+            <img src="https://i.ytimg.com/vi/TLmgaBEkbSU/mqdefault.jpg" style="width:320px;height:180px;border:6px solid #067292;border-radius:9px;" />
+            
+        </p>
+ </a>
+
+
+
+
+
+
+
+<!-- START Important Courses And Links-->
+<div class="container" >
+
+    
+<div class="row" style="margin:auto;">
+    
+    
+<!-- START BASIC ROCK in HTML -->
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="" dir="rtl">
+<a target="_blank" href="http://www.mediafire.com/file/ycg0ecxacj0ohpd/basic-rock-html.pdf/file" >
+    <div class="btn btn-primary" style="margin:3px;width:300px;height:38px;">
+        كتاب صخرة الأساس HTML    </div>
+</a>
+</div>
+<!-- END   BASIC ROCK in HTML -->
+    
+    
+<!-- START BASIC ROCK in CSS -->
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="" dir="rtl">
+<a target="_blank" href="http://www.mediafire.com/file/ernkowmqmpthgiv/basic-rock-css.pdf/file"  >
+    <div class="btn btn-primary" style="margin:3px;width:300px;height:38px;">
+        كتاب صخرة الأساس CSS    </div>
+</a>
+</div>
+<!-- END   BASIC ROCK in CSS -->
+    
+    
+    
+<!-- START Thanks Words -->
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="" dir="rtl">
+<a target="_blank" href="https://www.hassouna-academy.com/showthankswords">
+    <div class="btn btn-primary" style="margin:3px;width:300px;height:38px;">
+    عرض كلمات الشكر    <span class="glyphicon glyphicon-heart"></span>
+    </div>
+</a>  
+</div>
+<!-- END Thanks Words -->
+    
+<!-- START Web Course HTML,CSS,js,jq,bs,php,mysql -->
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="" dir="rtl">
+<a target="_blank" href="https://www.youtube.com/watch?v=saHJ4NjeZPY">
+    <div class="btn btn-primary" style="margin:3px;width:300px;height:38px;">
+        ما هو Full Stack Developer ؟    </div>
+</a>
+</div>
+<!-- END Web Course HTML,CSS,js,jq,bs,php,mysql -->
+    
+
+<!-- START Photoshop Course -->
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="" dir="rtl">
+<a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfntLWyOJQKyfR5RcuXdzfnU" >
+    <div class="btn btn-primary" style="margin:3px;width:300px;height:38px;">
+        كورس الفوتوشوب    </div>
+</a>
+</div>
+<!-- END Photoshop Course -->
+
+    
+
+    
+    
+<!-- START Windows Course -->
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="" dir="rtl">
+    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfkKu8K8Dz603sxLa3eQ-g6G">
+        <div class="btn btn-primary" style="margin:3px;width:300px;height:38px;">
+            دورة ويندوز Windows كمبيوتر        </div>
+    </a>
+</div>
+<!-- END Windows Course -->
+
+
+<!-- START Word Course -->
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="" dir="rtl">
+    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfk_q1_xWEJ8gl_nbPY_Y75A">
+        <div class="btn btn-primary" style="margin:3px;width:300px;height:38px;">
+            تعلم Word بالعربي بإيجاز        </div>
+    </a>
+</div>
+
+<!-- END Word Course -->
+
+
+<!-- START Excel Course -->
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="" dir="rtl">
+    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfmeaZUramzmRwJVLQThBiuu">
+        <div class="btn btn-primary" style="margin:3px;width:300px;height:38px;">
+            تعلم Excel بالعربي بإيجاز        </div>
+    </a>
+</div>
+<!-- END Excel Course -->
+
+    
+    
+<!-- START C# Course -->
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="" dir="rtl">
+    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfkDF2xTIB5kX8gdthmLTufx">
+        <div class="btn btn-primary" style="margin:3px;width:300px;height:38px;">
+            كورس سي شارب كبير        </div>
+    </a>
+</div>
+<!-- END C# Course -->
+    
+    
+<!-- START JAVA Course -->
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="" dir="rtl">
+    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfn9BnepQuzWiM_ZPIwUDawL">
+        <div class="btn btn-primary" style="margin:3px;width:300px;height:38px;">
+            كورس جافا كبير        </div>
+    </a>
+</div>
+<!-- END JAVA Course -->
+
+
+
+<!-- START Ring Course -->
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="" dir="rtl">
+    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfl6KzfLziFl650MmThnQ0jT">
+        <div class="btn btn-primary" style="margin:3px;width:300px;height:38px;">
+            كورس رينج كبير        </div>
+    </a>
+</div>
+<!-- END Ring Course -->
+    
+    
+    
+<!-- START One Video Learning Course -->
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="" dir="rtl">
+    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfnPUohWz2vPjm0obEjzZJD8">
+        <div class="btn btn-primary" style="margin:3px;width:300px;height:38px;">
+            ويب - سلسلة تعلم الفيديو الواحد        </div>
+    </a>
+</div>
+<!-- END One Video Learning Course -->
+    
+
+
+
+
+
+
+
+
+
+
+    
+</div>
+    
+    
+</div>
+<!-- END Important Courses And Links -->
+
+
+
+
+
+<div class="new-line"></div>
+
+
+<!--  Starting Basic Video  -->
+
+<div>
+    <div style="width:99%;margin:auto;margin-bottom:3px">
+    <div class="video-label" style="width:99%;height:45px;">
+        تعرف علي الاكاديمية    </div>
+    </div>
+    <iframe class="yt-video" style="float:left;" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
+             src="https://www.youtube.com/embed/x4d2Vk4iILI">
+    </iframe>
+    <p class="my-p" dir="rtl" style="height:350px;">
+    اكاديمية حسونة تهدف الي التعليم عن بعد بدقة و فهم عالي ، وذلك يجعل المشاهد يستطيع العمل بمفرده فيما بعد ، ... لا تعطيني سمكة ، ولكن علمني كيف اصتاد ... ، وهذا
+ يرفع من مستوي البلاد و البشر ، وتوفر ما يحتاجه سوق العمل من تعلم انشاء مواقع الويب و تطبيقات الهاتف الذكي و برامج الكمبيوتر ، و تسهل تعليم اللغات المختلفة مثل جافا و سي شارب و فيجوال بيسك و سي بلس بلس و HTML و CSS و جافا سكريبت و PHP و قواعد البيانات و علومها بجميع انواعها مثل Oracle و MS-SQL-Server و MySQL و Access و PostGreSQL وغيرها الكثير والكثير ، و تعرض لك قصص نجاح و نقاشات المبرمجين المفيدة ، وغير ذلك الكثير والكثير بفضل الله.    </p>
+</div>
+<br>
+
+
+<!--  End Basic Video  -->
+
+
+
+
+
+<!-- Tips -->
+<div style="width:99%;margin:auto;margin-bottom:3px">
+<div class="video-label" style="width:99%;height:auto;">
+    نصائح هامة - اقرأ ربما تجد ما تريد</div>
+</div>
+<div id="tips-ar" class="my-p" dir="rtl" >
+    كلمات غالية هدية لكم من اخوكم احمد حسونة 💖<br>
+    ما هي لغة البرمجة الافضل؟ ما هي التقنية الافضل؟ لماذا لا اتعلم كل لغات البرمجة؟<br>
+    اترك كل هذة الأسئلة و ركز فيما يلي:<br>
+    اسأل نفسك اولاً : ماذا انت تحتاج؟ ثم بعد ذلك اجعل احتياجك هو الذي يوجهك.<br>
+    فيما يلي بعض المعلومات التي قد تفيدك : اقرأها بالكامل:<br>
+    <ul>
+    <li>اعلم ان اغلب الكورسات التي سوف نتحدث عنها موجودة علي اكاديمية حسونة</li>
+    <li>تحليل وهيكلة البيانات و قواعد البيانات و اختبار البرمجيات هامة في جميع التطبيقات</li>
+    <li>اذا كنت تريد تطبيق سطح مكتب يعمل علي نظام ويندوز فقط استخدم سي شارب او فيجوال بيسك دوت نت مع قواعد بيانات اكسس او سكول سيرفر</li>
+    <li>اذا كنت تريد تطبيق سطح مكتب يعمل علي جميع الانظمة ويندوز و لينكس و ماك استخدم جافا مع قواعد بيانات ماي سكول او اوراكل - ويمكن استخدام لغات اخري مثل رينج و بايثون و غيرها</li>
+    <li>اعلم ان HTML و CSS و JavaScript و j Query و Bootstrap تفيدك عند بناء اي تطبيق ويب باستخدام اي لغة برمجة</li>
+    <li>اسهل و اسرع طريق لانشاء تطبيق ويب باتقان و فهم هو تعلم  HTML و CSS و JavaScript و j Query و Bootstrap و PHP و MySQL</li>
+    <li>يمكن انشاء تطبيقات ويب باستخدام جافا او سي شارب او رينج او بايثون والكثير من لغات البرمجة الاخري</li>
+    <li>اذا كنت تريد انشاء تطبيق موبايل اندرويد ابدأ بجافا ثم كوتلن</li>
+    <li>اذا كنت تريد انشاء تطبيق موبايل آي فون تعلم objective c و swift</li>
+    <li>اذا كنت تريد انشاء تطبيق موبايل ويندوز فون تعلم سي شارب</li>
+    <li>اذا كنت تريد انشاء تطبيق موبايل لجميع المنصات اندرويد و آي فون و ويندوز فون يمكنك استخدام xamarin او ionic او Adobe او Appcelerator وغيرها الكثير و الكثير</li>
+    </ul>
+</div>
+
+<div id="tips-en" class="my-p" dir="ltr" >
+    Dear words of gift to you from your brother Ahmed Hassouna 💖<br>
+    What is the best programming language? What is the best technology? Why do not I learn all the programming languages?<br>
+    Leave all these questions and focus on the following:<br>
+    Ask yourself first: What do you need? Then make your need that guides you.<br>
+    Here's some information that might help you: Read it in full:<br>
+    <ul>
+    <li>You know that most of the courses that we will talk about are located at Hassouna Academy</li>
+    <li>Analysis and structure of data, databases and software testing are important in all applications</li>
+    <li>If you want to apply a desktop running on Windows system only use C Sharp or Visual Basic with Access databases or SQL Server</li>
+    <li>If you want to apply a desktop running on all systems Windows, Linux and Mac Use Java with MySQL or Oracle databases - Other languages ​​can be used such as Ring, Python and others</li>
+    <li>Know that HTML, CSS, JavaScript, j Query and Bootstrap are useful when building any web application using any programming language</li>
+    <li>The easiest and fastest way to create a web application mastery and understanding is to learn HTML, CSS, JavaScript, j Query, Bootstrap, PHP and MySQL</li>
+    <li>Web applications can be created using Java, C Sharp, Ring or Python, and many other programming languages</li>
+    <li>If you want to create a mobile Android app start with Java and then Cutln</li>
+    <li>If you want to create a mobile iPhone application learn Objective c and swift</li>
+    <li>If you want to create a Windows Mobile iPhone application learn Si Sharp</li>
+    <li>If you want to create a mobile application for all platforms Android and iPhone and Windows iPhone you can use xamarin or ionic or Adobe or Appcelerator and many more and a lot</li>
+    </ul>
+</div>
+
+<!-- End Of Tips -->
+
+
+
+
+<a style="text-decoration: none;" href="https://www.youtube.com/watch?v=J6YX-AkzCQA&index=3&list=PLHIfW1KZRIfmxKFdzlyAna7sYE_L2hI0o" target="_blank">
+        <p class="my-p v-effect" style="font-weight:normal;" dir="rtl" >
+            شاهد لماذا؟ وما هي الفائدة؟ وهل بتجيب فلوس؟            <br>
+                <img src="https://i.ytimg.com/vi/J6YX-AkzCQA/mqdefault.jpg" style="width:320px;height:180px;border:6px solid #067292;border-radius:9px;" />
+            
+        </p>
+        </a>
+
+
+
+
+<!-- Basics Words -->
+<div style="width:99%;margin:auto;margin-bottom:3px">
+<div class="video-label" style="width:99%;height:auto;">
+    كلمات مطولة عن الموضوع بالكامل</div>
+</div>
+<p id="basic-words-ar" class="my-p" dir="rtl" >
+    في هذة الاكاديمية وهي اكاديمية حسونة وبالانجليزية Hassouna Academy يتم التعليم بشكل او تصميم اكاديمي academic حيث يتم انشاء دورات او كورسات Courses تحتوي علي دروس Tutorials او محاضرات Lectures بها تعليم Learning حول لغات البرمجة Programming Languages وبرمجة التطبيقات Apps و انشاء مواقع الانترنت او مواقع الويب Websites App وانشاء تطبيقات الاندرويد Android App او الويندوز فون Windows Phone او الاي فون i Phone او التابلت tablets سواء كان سامسونج Samsung او لينوفو Lenovo او غيره او اي باد iPad اي كان فكل ذلك تحت موضوع الهواتف الذكية Smartphone ويمكن ان نقول عنه انشاء تطبيقات الهاتف الذكي Create smartphone applications وايضاً يتم الاهتمام حول برامج سطح المكتب او تطبيقات سطح المكتب Desktop Applications لان هذة التطبيقات يتم الاحتياج اليها في بعض الاوقات مثل البرامج المكتبية Office والبرامج الرسومية Graphic software و برامج التصميم Design Software وغيرها الكثير و الكثير وكل ما سبق واكثر بل وكل التكنولوجيا Technology و عالم تكنولوجيا المعلومات World of Information Technology و المشهور بـ it تحتاج الي برمجيات Software لتعمل فمن اجل ذلك تم شرح لغات برمجة متعددة تساعدنا علي ذلك حيث تم شرح جافا JAVA و شرح سي شارب C# و شرح فيجوال بيسك VB و شرح رينج Ring و شرح سي بلس بلس C++ و شرح PHP وحتي في مجالات الويب Web يوجد تعليم HTML و تعليم CSS و تعليم جافا سكريبت JavaScript وكل هذة اللغات البرمجية انت تحتاج الي بيئة للعمل عليها IDE لانتاج البرامج المختلفة بها حيث يوجد تحميل برنامج فيجوال ستوديو Download Visual Studio و شرح تنزيل برنامج فيجوال ستوديو Install Visual Studio ويوجد تحميل برنامج اندرويد ستوديو Download Android Studio و شرح تنزيل برنامج اندرويد ستوديو Install Android Studio  ويوجد تحميل برنامج براكتس Download Brackets و شرح تنزيل برنامج براكتس Install Brackets  ويوجد تحميل برنامج اكلبس Download Eclipes و شرح تنزيل برنامج اكلبس Install Eclipes وحتي لو احتجت تعلم j Query او تعلم انجولار Angular او تعلم قواعد البيانات Database او تحليل البيانات Data Analysis او تعلم قاعدة بيانات ماي سكول MySQL DB او اوراكل Oracle او ميكروسوفت سكول سيرفر Microsoft SQL Server او سكول لايت SQLite او غيرها سوف تجد كل ذلك و اكثر بفضل الله وحتي الاساس سوف تجده حيث يوجد ايضاً شرح تنزيل ويندوز 10 و شرح تنزيل يوندوز 8 او 8.1 و شرح تنزيل ويندوز 7 و شرح تنزيل ويندوز اكس بي القديم Old XP و شرح تنزيل نظام ماك و شرح تنزيل نظام لينكس والتعامل معها.
+</p>
+
+<p id="basic-words-en" class="my-p" dir="ltr" >
+    In Hassouna Academy, the education is done in an academic form or design, where courses or workshops are held that contain lessons or lectures that teach about programming languages, programming applications, creating web sites, creating Android applications, Windows Phone, iPhone or tablet, whether Samsung or Lenovo or any other Or any iPad, all under the theme of smart phones can be said about the establishment of smart phone applications and also attention to desktop programs or desktop applications because these applications are needed at times such as office software and graphics programs and many more and much and everything S We have explained the various programming languages ​​that help us to do so. We have explained the JAVA and explain C Sharp C # and explain VB VB and explain the Ring and explain C ++ and PHP and even in the areas of the Web there is HTML education And the teaching of CSS and JavaScript education and all these languages ​​software you need an environment to work on them to produce the various programs where there is a download Download Visual Studio and explain the download Download Install Visual Studio and there is download Download Download Android Studio and explain Download Install Android Studio and there is a download program Download Brackets and Download Download If you need to learn jQuery, Learn Angular, Learn Database, Data Analysis, or learn MySQL Database, Oracle, Microsoft SQL Server, SQLite, or more, you will find all of this, and even more. Download Windows 10 and Explain Download Windows 8 or 8.1 and explain Download Windows 7 and explain Download Windows XP, and explain Download the Mac system and explain Download Linux system and deal with it all.
+</p>
+
+<!-- End Of Basics Words -->
+
+<div class="new-line"></div>
+
+<!-- Starting Carousel Famous Courses -->
+
+<!--  Title Of Famous Courses  -->
+<div >
+    <h3 class="public-label" dir="rtl" >
+        <span class="glyphicon glyphicon-star"></span>
+        أشهر الكورسات في الأكاديمية        <span class="glyphicon glyphicon-star"></span>
+    </h3>
+</div>
+<!--  Title Of Famous Courses  -->
+
+
+<div id="carousel-famous-courses" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+      <li data-target="#carousel-famous-courses" data-slide-to="0"  class="active" ></li><li data-target="#carousel-famous-courses" data-slide-to="1"  ></li><li data-target="#carousel-famous-courses" data-slide-to="2"  ></li><li data-target="#carousel-famous-courses" data-slide-to="3"  ></li><li data-target="#carousel-famous-courses" data-slide-to="4"  ></li><li data-target="#carousel-famous-courses" data-slide-to="5"  ></li><li data-target="#carousel-famous-courses" data-slide-to="6"  ></li><li data-target="#carousel-famous-courses" data-slide-to="7"  ></li><li data-target="#carousel-famous-courses" data-slide-to="8"  ></li><li data-target="#carousel-famous-courses" data-slide-to="9"  ></li><li data-target="#carousel-famous-courses" data-slide-to="10"  ></li>  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+      
+    <div class="item active">    <a target="_blank" href="https://www.youtube.com/user/HassounaAcademy">        <div class="carousel-caption play-icon"><span class="glyphicon glyphicon-play-circle"></span></div>    </a>    <img class="img-slide" src="https://www.hassouna-academy.com/images/ha.png" alt="...">    <div class="carousel-caption">        <h2 dir="rtl" style="color:#067292;font-weight:bold;">اكاديمية حسونة</h2>    </div></div><div class="item">    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfn9BnepQuzWiM_ZPIwUDawL">        <div class="carousel-caption play-icon"><span class="glyphicon glyphicon-play-circle"></span></div>    </a>    <img class="img-slide" src="https://www.hassouna-academy.com/images/java.png" alt="...">    <div class="carousel-caption">        <h2 dir="rtl" style="color:#067292;font-weight:bold;">كورس جافا مفتوح من البداية الي الاحتراف</h2>    </div></div><div class="item">    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfkDF2xTIB5kX8gdthmLTufx">        <div class="carousel-caption play-icon"><span class="glyphicon glyphicon-play-circle"></span></div>    </a>    <img class="img-slide" src="https://www.hassouna-academy.com/images/csharp.png" alt="...">    <div class="carousel-caption">        <h2 dir="rtl" style="color:#067292;font-weight:bold;">كورس سي شارب مفتوح من البداية الي الاحتراف</h2>    </div></div><div class="item">    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfmLGhFsQ1G5cPv1xokzBsbT">        <div class="carousel-caption play-icon"><span class="glyphicon glyphicon-play-circle"></span></div>    </a>    <img class="img-slide" src="https://www.hassouna-academy.com/images/vbdotnet.png" alt="...">    <div class="carousel-caption">        <h2 dir="rtl" style="color:#067292;font-weight:bold;">كورس فيجوال بيسك مفتوح من البداية الي الاحتراف</h2>    </div></div><div class="item">    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfnXKjZ9UcT5BVt9x19BlItX">        <div class="carousel-caption play-icon"><span class="glyphicon glyphicon-play-circle"></span></div>    </a>    <img class="img-slide" src="https://www.hassouna-academy.com/images/html.png" alt="...">    <div class="carousel-caption">        <h2 dir="rtl" style="color:#067292;font-weight:bold;">اسهل طريقة في تعلم لغة HTML</h2>    </div></div><div class="item">    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIflO6xnz4jpmzzSuo5B63aJf">        <div class="carousel-caption play-icon"><span class="glyphicon glyphicon-play-circle"></span></div>    </a>    <img class="img-slide" src="https://www.hassouna-academy.com/images/css.png" alt="...">    <div class="carousel-caption">        <h2 dir="rtl" style="color:#067292;font-weight:bold;">اسهل طريقة في تعلم لغة CSS</h2>    </div></div><div class="item">    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfmiYYwt29BG7N9zzsd-jLRQ">        <div class="carousel-caption play-icon"><span class="glyphicon glyphicon-play-circle"></span></div>    </a>    <img class="img-slide" src="https://www.hassouna-academy.com/images/javascript.png" alt="...">    <div class="carousel-caption">        <h2 dir="rtl" style="color:#067292;font-weight:bold;">اسهل طريقة في تعلم لغة جافا سكريبت</h2>    </div></div><div class="item">    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfll3ObMFi02Ry7oRU3MJVRG">        <div class="carousel-caption play-icon"><span class="glyphicon glyphicon-play-circle"></span></div>    </a>    <img class="img-slide" src="https://www.hassouna-academy.com/images/jquery.png" alt="...">    <div class="carousel-caption">        <h2 dir="rtl" style="color:#067292;font-weight:bold;">اسهل طريقة في تعلم مكتبة j Query</h2>    </div></div><div class="item">    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfmPDQahhTDdd1DJ4PwQl3pC">        <div class="carousel-caption play-icon"><span class="glyphicon glyphicon-play-circle"></span></div>    </a>    <img class="img-slide" src="https://www.hassouna-academy.com/images/php.png" alt="...">    <div class="carousel-caption">        <h2 dir="rtl" style="color:#067292;font-weight:bold;">اسهل طريقة في تعلم لغة PHP</h2>    </div></div><div class="item">    <a target="_blank" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfmbpu6cVCxo98u_Yk0Hfxah">        <div class="carousel-caption play-icon"><span class="glyphicon glyphicon-play-circle"></span></div>    </a>    <img class="img-slide" src="https://www.hassouna-academy.com/images/android.png" alt="...">    <div class="carousel-caption">        <h2 dir="rtl" style="color:#067292;font-weight:bold;">تعلم اندرويد بشكل صحيح من البداية الي الاحتراف</h2>    </div></div><div class="item">    <a target="_blank" href="https://www.youtube.com/user/HassounaAcademy">        <div class="carousel-caption play-icon"><span class="glyphicon glyphicon-play-circle"></span></div>    </a>    <img class="img-slide" src="https://www.hassouna-academy.com/images/ha2.png" alt="...">    <div class="carousel-caption">        <h2 dir="rtl" style="color:#067292;font-weight:bold;">اكاديمية حسونة - تعلم كل ما تريد</h2>    </div></div>   
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-famous-courses" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-famous-courses" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- End Carousel Famous Courses -->
+
+
+
+<div class="new-line"></div>
+
+
+<h3 class="public-label" dir="rtl" >
+    <span class="glyphicon glyphicon-education"></span>
+    كورسات أخري في الاكاديمية    <span class="glyphicon glyphicon-education"></span>
+</h3>
+
+<a href="othercourses" target="_blank" class="btn btn-primary" style="width:99%;margin-bottom:15px;margin-left:7px;margin-right:7px">
+    اضغط هنا لعرض كورسات اخري</a>
+
+
+<!-- START Facebook Comments And Share - HTML -->
+<div style="padding:15px;margin:15px;border:2px solid #1d185f;border-radius:5px;" dir="rtl">
+    <center>
+    <div class="video-label" style="width:99%;height:45px;">
+    تعليقات علي منشور الموقع    </div>
+    <div class="fb-comments" data-href="https://www.facebook.com/Hassouna.Academy/posts/1762711720434486" data-numposts="5"></div>
+    </center>
+</div>
+<!-- END Facebook Comments And Share - HTML -->
+
+
+<script>
+    $(document).ready(function(){
+
+        var islogged = '';
+        if(islogged!=''){ 
+            $('#regNow').hide();
+            $('#forReg').hide();
+        }
+
+        var myL = document.cookie;
+        if( myL.indexOf("lang=ar") != -1 ){
+            ///////This Lang is Arabic
+            $('#basic-words-en').hide();
+            $('#tips-en').hide();
+        }
+        else{
+            ///////This Lang is English
+            $('#basic-words-ar').hide();
+            $('#tips-ar').hide();
+        }
+    });
+</script>
+
+<!-- START Facebook Like And Share - JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var langForfacebook = "ar_AR";
+    var myL = document.cookie;
+    if( myL.indexOf("lang=ar") != -1 ){
+        ///////This Lang is Arabic
+        langForfacebook = "ar_AR";
+    }
+    else{
+        ///////This Lang is English
+        langForfacebook = "en_EN";
+    }
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/'+langForfacebook+'/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- END Facebook Like And Share - JavaScript -->
+
